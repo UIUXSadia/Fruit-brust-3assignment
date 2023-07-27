@@ -233,7 +233,38 @@
                   <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
                   <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
                 </div>
-                <button class="mt-8 btn btn-secondary">Details</button>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="mt-8 btn btn-secondary" onclick="my_modal_5.showModal()">Details</button>
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                          </figure>
+                    <div class="items-center p-12 text-center card-body">
+                      <h2 class="font-extrabold card-title">12.90$ - 18.85$</h2>
+                      <div class="divider"></div>
+                      <p>Apples</p>
+                      <!-- ratings start -->
+                      <div class="rating rating-lg rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                      </div>
+                    <div class="modal-action">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                      <button class="btn">Buy Now</button>
+                    </div>
+                  </form>
+                </dialog>
                     </div>
                 </div>          
             <div class="shadow-xl card w-96 bg-base-100">
